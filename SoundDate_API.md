@@ -44,7 +44,7 @@ Element | Description | Type | Notes
 
 ```
 {
-  "id": "12345"
+  "id": 12345
   "length": 150.5
 }
 ```
