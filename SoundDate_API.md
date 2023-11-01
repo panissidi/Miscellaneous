@@ -6,38 +6,22 @@ Uploads a sound file to the user's profile.
 
 `POST https://api.sounddate.com/profile/sound`
 
-Header
-Description
-Required
-Notes
-Bearer
-The access token.
-Required
-See authorization section.
-Content-Type
-The format of the sound file to send.
-Optional
-Acceptable values:
-audio/mpeg for MP3 files
-audio/x-wav for wav files
+### Headers
 
-Default value:
-audio/mpeg
-Accept
-The format of the response.
-Optional
-Acceptable values:
+Header | Description | Required | Notes
+-------|-------------|----------|------
+Bearer | The access token. | Required | See authorization section.
+Content-Type | The format of the sound file to send. | Optional | Acceptable values: audio/mpeg for MP3 files or audio/x-wav for wav files. Default value:
+audio/mpeg.
+Accept | The format of the response. | Optional | Acceptable values: application/xml or application/json. Default value: application/json
 
-application/xml
-application/json
+### POST body
 
-Default value:
-application/json
-
-POST body
 The sound file, which must be 5 minutes or less.
-Sample request
-POST https://api.sounddate.com/profile/sound
+
+### Sample request
+
+`POST https://api.sounddate.com/profile/sound
 
 Bearer: YOUR_ACCESS_TOKEN
 Content-Type: audio/mpeg
@@ -45,31 +29,25 @@ Accept: application/json
 
 {
   The sound file
-}
-Response
+}`
 
-Element
-Description
-Type
-Notes
-id
-The ID of the new sound file.
-Integer
+### Response
+
+Element | Description | Type | Notes
+--------|-------------|------|------
+id | The ID of the new sound file. | Integer
+length | The length of the sound file. | Float | In seconds
 
 
-length
-The length of the sound file.
-Float
-In seconds
+### Sample response
 
-
-Sample response
-{
+`{
   "id": "12345"
   "length": "150.5
-}
+}`
 
-GET /user/{user id}/profile/sound
+## GET /user/{user id}/profile/sound
+
 Retrieves the user's sound files.
 
 GET https://api.sounddate.com/user/{user id}/profile/sound
