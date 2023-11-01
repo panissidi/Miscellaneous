@@ -12,7 +12,7 @@ Header | Description | Required | Notes
 -------|-------------|----------|------
 `Bearer` | The access token. | Required | See authorization section.
 `Content-Type` | The format of the sound file to send. | Optional | Acceptable values: `audio/mpeg` for MP3 files or `audio/x-wav` for wav files. Default value: `audio/mpeg`.
-`Accept` | The format of the response. | Optional | Acceptable values: `application/xml` or `application/json`. Default value: `application/json`
+`Accept` | The format of the response. | Optional | Acceptable values: `application/xml` or `application/json`. Default value: `application/json`.
 
 ### POST body
 
