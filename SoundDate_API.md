@@ -11,8 +11,8 @@ Uploads a sound file to the user's profile.
 Header | Description | Required | Notes
 -------|-------------|----------|------
 Bearer | The access token. | Required | See authorization section.
-Content-Type | The format of the sound file to send. | Optional | Acceptable values: audio/mpeg for MP3 files or audio/x-wav for wav files. Default value: audio/mpeg.
-Accept | The format of the response. | Optional | Acceptable values: application/xml or application/json. Default value: application/json
+Content-Type | The format of the sound file to send. | Optional | Acceptable values: `audio/mpeg` for MP3 files or `audio/x-wav` for wav files. Default value: `audio/mpeg`.
+Accept | The format of the response. | Optional | Acceptable values: `application/xml` or `application/json`. Default value: `application/json`
 
 ### POST body
 
@@ -53,100 +53,46 @@ length | The length of the sound file. | Float | In seconds
 
 Retrieves the user's sound files.
 
-GET https://api.sounddate.com/user/{user id}/profile/sound
-Path parameters
+`GET https://api.sounddate.com/user/{user id}/profile/sound`
 
-Parameter
-Description
-Type
-Required
-Notes
-user id
-The user's ID.
-Integer
-Required
+### Path parameters
 
+Parameter | Description | Type | Required | Notes
+----------|-------------|------|----------|------
+user id | The user's ID. | Integer | Required
 
+### Query parameters
 
+Parameter | Description | Type | Required | Notes
+----------|-------------|------|----------|------
+sortOrder | The order in which the sound files are returned. | String | Optional | Acceptable values: `mostRecent`: Sorts most recent to earliest; `earliest`: Sorts earliest to most recent; `shortest`: Shorts shortest to longest; `longest`: Sorts longest to shortest. Default value: `mostRecent`
 
-Query parameters
+### Headers
 
-Parameter
-Description
-Type
-Required
-Notes
-sortOrder
-The order in which the sound files are returned.
-String
-Optional
-Acceptable values:
-mostRecent: Sorts most recent to earliest.
-earliest: Sorts earliest to most recent.
-shortest: Shorts shortest to longest.
-longest: Sorts longest to shortest.
+Header | Description | Required | Notes
+-------|-------------|----------|------
+Bearer | The access token. | Required
+Accept | The format of the response. | Optional | Acceptable values: `application/xml` or `application/json`. Default value: `application/json`.
 
-Default value:
-mostRecent
+### Sample request
 
-Headers
-
-Header
-Description
-Required
-Notes
-Bearer
-The access token.
-Required
-
-
-Accept
-The format of the response.
-Optional
-Acceptable values:
-application/xml
-application/json
-
-Default value:
-application/json
-
-Sample request
+```
 GET https://api.sounddate.com/user/345354/profile/sound?sortOrder=shortest
 
 Bearer: ACCESS_TOKEN
 Accept: application/json
-Response
+```
 
-Element
-Description
-Type
-Notes
-soundFiles
-The parent object that contains the sound files.
-Array
+### Response
 
+Element | Description | Type | Notes
+--------|-------------|------|------
+soundFiles | The parent object that contains the sound files. | Array
+id | The ID of the sound file. | Integer
+url | The URL of the sound file. | String
+length | The length of the sound file. | Float | In seconds.
 
-
-
-id
-The ID of the sound file.
-Integer
-
-
-
-
-url
-The URL of the sound file.
-String
-
-
-
-
-length
-The length of the sound file.
-Float
-In seconds.
-
+```
 Sample response
 {
   "soundFiles": [
@@ -162,19 +108,13 @@ Sample response
     }
   ]
 }
+```
 
-Status codes and errors
+### Status codes and errors
 
-Code
-Description
-Notes
-200
-Success
-Sound file retrieved or created.
-401
-Unauthorized
-Invalid access token.
-413
-Payload too large
-Sound file longer than 5 minutes.
+Code | Description | Notes
+-----|-------------|------
+200 | Success | Sound file retrieved or created.
+401 | Unauthorized | Invalid access token.
+413 | Payload too large | Sound file longer than 5 minutes.
 
