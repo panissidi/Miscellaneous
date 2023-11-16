@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_images_tables_exercise">
+
+ <title>Supporting marketing with technical content</title>
+
+ <conbody>
+   
+   <p>Tech comm and marcom have long occupied opposite ends of the content spectrum. The stereotype is that tech comm is text-heavy, dense, and badly formatted whereas marcom is shiny, beautiful, and content-free. From there, the debate just intensifies:</p>
+
+   <p><i>Marcom versus tech comm: The stereotypes</i></p>
+
+   <simpletable>
+
+     <sthead>
+       <entry><p></p></entry>
+       <entry><p><b>Marcom</b></p></entry>
+       <entry><p><b>Tech comm</b></p></entry>
+     <sthead>
+
+     <strow>
+       <entry><p>Design or automation?</p></entry>
+       <entry><p>Design</p></entry>
+       <entry><p>Automation</p></entry>
+     </strow>
+
+     <strow>
+       <entry><p>How much detail?</p></entry>
+       <entry><p>As little as possible</p></entry>
+       <entry><p>As much as possible</p></entry>
+     </strow>
+
+     <strow>
+       <entry><p>Assumed impact on revenue</p></entry>
+       <entry><p>A lot</p></entry>
+       <entry><p>None</p></entry>
+     </strow>
+
+     <strow>
+       <entry><p>Primary purpose</p></entry>
+       <entry><p>Persuade people to buy</p></entry>
+       <entry><p>Inform people</p></entry>
+     </strow>
+   
+   </simpletable>
+
+   <p>Give people a friendly interface that lets them quickly narrow down their options and choose the one they want. You don’t have to expose all of the fields in the database—just the ones that help people narrow down their choices.</p>
+
+   <fig>
+     <title>The product list on the right updates as you make selections on the left.</title>
+     <image href="lesson2/images/configurebetter1.png"/>
+   </fig>
+
+ </conbody>
+
+</concept>
