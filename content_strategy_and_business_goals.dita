@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+
 <concept id="my_first_concept_exercise">
 
  <title>Content strategy and business goals</title>
@@ -7,7 +8,7 @@
  <conbody>
 
    <p>The issues to consider are the following:</p>
-   
+
    <ul>
      <li><p>The real cost of low-cost documentation</p></li>
      <li><p>How to create an efficient content-development process</p></li>
