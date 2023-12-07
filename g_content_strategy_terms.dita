@@ -12,7 +12,7 @@
     </glossdef>
   </glossentry>
 
-  <glossentry id="strcutured content">
+  <glossentry id="structured_content">
     <glossterm>structured content</glossterm>
     <glossdef>
       <p>Information that is organized in a predictable way.</p>
@@ -33,7 +33,7 @@
     </glossdef>
   </glossentry>
 
-  <glossentry id="discoverable content">
+  <glossentry id="discoverable_content">
     <glossterm>discoverable content</glossterm>
     <glossdef>
       <p>Information that has in-bound links, especially on social media.</p>
