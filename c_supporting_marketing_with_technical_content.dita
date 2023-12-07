@@ -13,29 +13,29 @@
 
    <simpletable>
      <sthead>
-       <entry><p></p></entry>
-       <entry><p><b>Marcom</b></p></entry>
-       <entry><p><b>Tech comm</b></p></entry>
+       <stentry><p></p></stentry>
+       <stentry><p><b>Marcom</b></p></stentry>
+       <stentry><p><b>Tech comm</b></p></stentry>
      </sthead>
      <strow>
-       <entry><p>Design or automation?</p></entry>
-       <entry><p>Design</p></entry>
-       <entry><p>Automation</p></entry>
+       <stentry><p>Design or automation?</p></stentry>
+       <stentry><p>Design</p></stentry>
+       <stentry><p>Automation</p></stentry>
      </strow>
      <strow>
-       <entry><p>How much detail?</p></entry>
-       <entry><p>As little as possible</p></entry>
-       <entry><p>As much as possible</p></entry>
+       <stentry><p>How much detail?</p></stentry>
+       <stentry><p>As little as possible</p></stentry>
+       <stentry><p>As much as possible</p></stentry>
      </strow>
      <strow>
-       <entry><p>Assumed impact on revenue</p></entry>
-       <entry><p>A lot</p></entry>
-       <entry><p>None</p></entry>
+       <stentry><p>Assumed impact on revenue</p></stentry>
+       <stentry><p>A lot</p></stentry>
+       <stentry><p>None</p></stentry>
      </strow>
      <strow>
-       <entry><p>Primary purpose</p></entry>
-       <entry><p>Persuade people to buy</p></entry>
-       <entry><p>Inform people</p></entry>
+       <stentry><p>Primary purpose</p></stentry>
+       <stentry><p>Persuade people to buy</p></stentry>
+       <stentry><p>Inform people</p></stentry>
      </strow>
    </simpletable>
 
