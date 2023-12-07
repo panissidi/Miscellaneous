@@ -50,7 +50,7 @@
           <choicetable>
             <chhead>
               <choptionhd>Delivery method</choptionhd>
-              <chdeschd>Benefits</chdesc>
+              <chdeschd>Benefits</chdeschd>
             </chhead>
             <chrow>
               <choption>PDF</choption>
